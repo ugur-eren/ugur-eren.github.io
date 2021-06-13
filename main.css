@@ -5,7 +5,7 @@
 
 :root {
   --background: #242424;
-  --surface: #272727;
+  --surface: #3d3d3d;
   --text: #fafafa;
 }
 
@@ -38,4 +38,30 @@ body {
 
 .description {
   margin: 12px auto;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+}
+
+.icon-button {
+  display: flex;
+  background-color: transparent;
+  color: var(--text);
+  margin: 0px 6px;
+  padding: 8px;
+  border-radius: 99px;
+  transition: all 0.2s;
+}
+
+.icon-button:hover {
+  background-color: var(--surface);
+  box-shadow: 0 0 4px 0px var(--surface);
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
 }
